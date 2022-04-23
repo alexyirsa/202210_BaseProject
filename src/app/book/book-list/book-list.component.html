@@ -1,3 +1,17 @@
-<p>
-  book-list works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col mb-2" *ngFor="let book of books">
+          <div class="card p-2" style="width: 15rem; height: 33rem">
+              <img
+                class="card-img-top"
+                src="{{ book.image }}"
+                alt="{{ book.name }}"
+              />
+              <div class="card-body">
+                <h5 class="card-title">{{ book.name }}</h5>
+                  <p class="card-text">[{{ book.editorial.name }}]</p>
+              </div>
+           </div>
+      </div>
+   </div>
+</div>
