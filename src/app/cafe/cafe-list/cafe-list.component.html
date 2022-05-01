@@ -1,0 +1,35 @@
+
+<h1>El aroma mágico</h1>
+<nav>
+      <hr>
+      <br/>
+      <img>
+      <hr id="hr2">
+</nav>
+  <div id="pos" class="container" style="margin-top: 70px;">
+    <table class="table table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>#</th>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Región</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cafe of cafes; let indice=index">
+          <td style="font-weight:bolder">{{cafe.id}}</td>
+          <td>{{cafe.nombre}} </td>
+          <td>{{cafe.tipo}} </td>
+          <td>{{cafe.region}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Total café de origen:&nbsp;{{getCantidad("Café de Origen")}}</p>
+  <p>Total café blend:&nbsp;{{getCantidad("Blend")}}</p>
+
+
+
+
+
